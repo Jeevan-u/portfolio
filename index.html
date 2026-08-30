@@ -1,811 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Landing Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeevan K L — B.Tech CSE (AI/ML) student, developer and builder creating modern web applications and AI/ML projects.">
+  <meta name="keywords" content="Jeevan K L, web developer, AI ML, React, JavaScript, Python, portfolio, Bangalore">
+  <meta name="author" content="Jeevan K L">
+  <meta name="theme-color" content="#0b0f19">
+  <meta property="og:title" content="Jeevan K L — Developer Portfolio">
+  <meta property="og:description" content="B.Tech CSE (AI/ML) student building practical web and AI/ML projects.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jeevan-u.github.io/portfolio/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Jeevan K L | Developer Portfolio</title>
 </head>
 <body>
-    <header class="header-area">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">Jeevan's Web Studio</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fa-solid fa-bars"></i></button>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="#home" aria-label="Jeevan K L home"><span>J</span> Jeevan K L</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link active" data-scroll-nav="0">home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link " data-scroll-nav="1">about</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link " data-scroll-nav="2">services</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link " data-scroll-nav="3">portfolio</a></li>
-                        <li class="nav-item"><a href="#testimonials" class="nav-link " data-scroll-nav="4">testimonials</a></li>
-                        <li class="nav-item"><a href="#pricing" class="nav-link " data-scroll-nav="5">pricing</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link " data-scroll-nav="6">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <section class="home" id="home" data-scroll-index="0">
-            <div class="header-content d-flex align-items-center">
-                <div id="parallax">
-                    <div class="header-shape shape-one" data-depth="0.10">
-                        <img src="https://i.postimg.cc/J7bRR2cK/shape-1.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-two" data-depth="0.30">
-                        <img src="https://i.postimg.cc/437TqLx6/shape-2.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-three" data-depth="0.40">
-                        <img src="https://i.postimg.cc/63Cx58RT/shape-3.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-four" data-depth="0.60">
-                        <img src="https://i.postimg.cc/437TqLx6/shape-2.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-five" data-depth="0.20">
-                        <img src="https://i.postimg.cc/J7bRR2cK/shape-1.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-six" data-depth="0.15">
-                        <img src="https://i.postimg.cc/bNyfpNvN/shape-4.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-seven" data-depth="0.50">
-                        <img src="https://i.postimg.cc/9FL5M54P/shape-5.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-eight" data-depth="0.40">
-                        <img src="https://i.postimg.cc/63Cx58RT/shape-3.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-nine" data-depth="0.20">
-                        <img src="https://i.postimg.cc/sgLkYY4v/shape-6.png" alt="image">
-                    </div>
-
-                    <div class="header-shape shape-ten" data-depth="0.30">
-                        <img src="https://i.postimg.cc/63Cx58RT/shape-3.png" alt="image">
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="home-text ">
-                                <h4>HELLO, I'M</h4>
-                                <h1>Jeevan K L</h1>
-                                <p>A freelancer UI Designer & Web Developer</p>
-
-                                <div class="home-btn">
-                                    <a href="#" class="btn-1">View my Work</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="home-img d-none d-lg-block">
-                         <img src="https://i.postimg.cc/PqZ3bt0G/profile-pic.png" alt="JEEVAN K L">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header-social">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="header-social-icon">
-                                    <ul>
-                                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="https://github.com/Jeevan-u"><i class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/jeevan-k-l-888537317/"><i class="fa-brands fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-
-    <section class="about-area section-padding" id="about" data-scroll-index="1">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 ">
-                    <div class="section-title">
-                        <h4>About</h4>
-                        <h2>Personal <span>Details</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <h5 class="about-title">I'm <span>Jeevan K L</span> and I'm a Web Designer</h5>
-                        <p class="details">I am a passionate web designer with a love for creating beautiful and functional websites. I enjoy working with HTML, CSS, and JavaScript to bring ideas to life and enhance user experiences. In my free time, I like to explore new design trends and work on personal projects that challenge my creativity</p>
-
-                            <ul>
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-calendar"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Date of Birth:</span> 15 February 2007</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Email:</span> jeevankl2007@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-phone"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Phone:</span> +91 9242280953</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-map-marker"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Location:</span> Nelamangala,Bangalore</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-university"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Degree:</span> <abbr title="Bachelor of Technology in Computer Science">B.Tech (CSE) in AI/ML </abbr> </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="single-info d-flex align-items-center">
-                                        <div class="info-icon text-center">
-                                            <i class="fa-solid fa-user"></i>
-                                        </div>
-                                        <div class="info-text">
-                                            <p><span>Website:</span> www.jeevastudio.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <a href="#" class="hire-me">Hire me</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-5 offset-xl-1">
-                    <div id="skill-bar-wrapper">
-                        <div class="text-left">
-                            <h4>C++ <span style="float: right;">95%</span></h4>
-                            <div class="skillbar-container" data-percent="95%">
-                                <div class="skills"></div>
-                            </div>
-
-                            <h4>Java <span style="float: right;">85%</span></h4>
-                            <div class="skillbar-container" data-percent="85%">
-                                <div class="skills"></div>
-                            </div>
-
-                            <h4>HTML <span style="float: right;">75%</span></h4>
-                            <div class="skillbar-container" data-percent="75%">
-                                <div class="skills"></div>
-                            </div>
-
-                            <h4>JQuery <span style="float: right;">80%</span></h4>
-                            <div class="skillbar-container" data-percent="80%">
-                                <div class="skills"></div>
-                            </div>
-
-                            <h4>Javascript <span style="float: right;">85%</span></h4>
-                            <div class="skillbar-container" data-percent="85%">
-                                <div class="skills"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Open to internships & developer opportunities</p>
+        <h1 id="hero-title">Building <span>useful software</span> with code, curiosity & AI.</h1>
+        <p class="hero-text">I'm Jeevan K L, a B.Tech CSE (AI/ML) student focused on full-stack web development, machine learning and clean user experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-ghost" href="https://github.com/Jeevan-u" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
         </div>
+        <div class="hero-meta" aria-label="Quick facts">
+          <span><strong>2028</strong> Expected graduation</span>
+          <span><strong>AI/ML</strong> Specialization</span>
+          <span><strong>Bengaluru</strong> India</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay" aria-label="Jeevan K L profile">
+        <div class="visual-glow"></div>
+        <div class="profile-card">
+          <div class="card-top"><span>DEVELOPER</span><i class="fa-solid fa-code"></i></div>
+          <img src="https://i.postimg.cc/PqZ3bt0G/profile-pic.png" alt="Portrait of Jeevan K L" loading="eager">
+          <div class="profile-caption"><strong>Jeevan K L</strong><span>Computer Science · AI/ML</span></div>
+        </div>
+        <div class="floating-chip chip-one"><i class="fa-brands fa-react"></i> React</div>
+        <div class="floating-chip chip-two"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="floating-chip chip-three"><i class="fa-solid fa-brain"></i> ML</div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / About</p>
+          <h2 id="about-title">A student who likes <span>building things.</span></h2>
+        </div>
+        <div class="about-copy reveal reveal-delay">
+          <p>I'm pursuing a B.Tech in Computer Science & Engineering with an AI/ML focus at Rai Technology University. I enjoy turning ideas into working products — from responsive websites to practical software for real-world workflows.</p>
+          <p>My current toolkit spans JavaScript, React, Python, Java, C/C++, databases and modern developer tooling. I'm especially interested in software engineering, AI/ML and products where good engineering meets a thoughtful interface.</p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/jeevan-k-l-888537317/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:jeevankl2007@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="services section-padding" id="services" data-scroll-index="2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Services</h4>
-                        <h2>Services <span>that I can provide for you</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop"></i>
-                        </div>
-                        <h3>Web Design</h3>
-                        <p>By understanding your needs and goals, I translate those into wireframes and mockups by blending artistic vision with technical skills to craft user-friendly and visually appealing online experiences</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-edit"></i>
-                        </div>
-                        <h3>Video Editing</h3>
-                        <p>By understanding of visual composition, color theory, and typography I can create for you engaging title cards, design animated transitions, or choose appropriate background music to match the video's tone</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3>Web Development</h3>
-                        <p>I can create wireframes and prototypes that outline the layout and user interface element. Also I ensure that the website looks good across different devices and browsers, blending design and functionality</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-paint-brush"></i>
-                        </div>
-                        <h3>Graphic Design</h3>
-                        <p>With the goal to create compelling visual elements for websites, I can design logos, icons, illustrations, and other visual assets that enhance the website's branding and aesthetic appeal</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-bullhorn"></i>
-                        </div>
-                        <h3>Digital Marketing</h3>
-                        <p>In digital marketing, I play a vital role for your website, by enhancing visual aesthetics, user experience, <abbr title="Search Engine Optimization">SEO</abbr>, responsive design and mainly conversion optimization</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item">
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
-                        </div>
-                        <h3>Android Development</h3>
-                        <p>I can create visually appealing and intuitive Android app interfaces, by designing app layouts, navigation menus, buttons and icons, ensuring a cohesive and user-friendly experience</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">02 / Skills</p>
+          <h2 id="skills-title">Tools I <span>build with.</span></h2>
+          <p>Focused on fundamentals first, with a growing modern stack.</p>
         </div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-code"></i></div><h3>Languages</h3><p>Python · Java · C · C++ · JavaScript</p></article>
+          <article class="skill-card reveal reveal-delay"><div class="skill-icon"><i class="fa-brands fa-react"></i></div><h3>Web</h3><p>HTML · CSS · React JS · Vite · Tailwind CSS · MERN</p></article>
+          <article class="skill-card reveal"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h3>Backend & Data</h3><p>Supabase · SQL · REST APIs · Cloudinary</p></article>
+          <article class="skill-card reveal reveal-delay"><div class="skill-icon"><i class="fa-solid fa-robot"></i></div><h3>AI / ML</h3><p>Machine Learning · Data Science · AI fundamentals</p></article>
+          <article class="skill-card reveal"><div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div><h3>Developer Tools</h3><p>Git · GitHub · VS Code · NPM · Vercel</p></article>
+          <article class="skill-card reveal reveal-delay"><div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Core CS</h3><p>DSA · OOP · Operating Systems · Algorithms</p></article>
+        </div>
+      </div>
     </section>
 
-    <section class="img-gallery section-padding" id="portfolio" data-scroll-index="3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Portfolio</h4>
-                        <h2>Our latest <span>work</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-lg-8 d-flex justify-content-center sortBtn flex-wrap">
-                    <a href="#" class="filter-btn active" data-filter="*">All</a>
-                    <a href="#" class="filter-btn " data-filter=".wordpress">Wordpress</a>
-                    <a href="#" class="filter-btn " data-filter=".photoshop">Photoshop</a>
-                    <a href="#" class="filter-btn " data-filter=".web-design">Web Design</a>
-                </div>
-            </div>
-
-            <div class="row grid">
-                <div class="col-lg-4 col-md-6 col-sm-6 wordpress">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/0ykh0n4C/portfolio-1.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/0ykh0n4C/portfolio-1.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/Xqw7dLPb/portfolio-2.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/Xqw7dLPb/portfolio-2.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 wordpress">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/26nfK67d/portfolio-3.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/26nfK67d/portfolio-3.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 web-design">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/PxsgYHnC/portfolio-4.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/PxsgYHnC/portfolio-4.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/155LpM2r/portfolio-5.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/155LpM2r/portfolio-5.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 photoshop">
-                    <div class="single-work text-center mt-30">
-                        <div class="work-image">
-                            <img src="https://i.postimg.cc/gJHTh6K7/portfolio-6.jpg" alt="portfolio image">
-                        </div>
-
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Product Design</h3>
-                                <ul>
-                                    <li><a href="https://i.postimg.cc/gJHTh6K7/portfolio-6.jpg" class="image-popup"><i class="fa-solid fa-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading project-heading reveal">
+          <div><p class="eyebrow">03 / Selected work</p><h2 id="projects-title">Projects with a <span>purpose.</span></h2></div>
+          <p>Real projects, not template demos — built to learn, solve problems and ship.</p>
         </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-icon"><i class="fa-solid fa-notes-medical"></i></div>
+            <p class="project-type">Full-stack · Healthcare</p>
+            <h3>Prashali Skin Sciences EMR</h3>
+            <p>A dermatology clinic EMR built with React + Vite and Supabase. Includes authentication, patient records, visit timelines, diagnoses, medicines, prescription printing and Cloudinary-powered skin image workflows.</p>
+            <div class="tags"><span>React</span><span>Supabase</span><span>Cloudinary</span><span>Vite</span></div>
+            <div class="project-links"><a href="https://www.prashaliskinsciences.com/" target="_blank" rel="noopener noreferrer">Live website <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/Jeevan-u/PRASHALI-SKIN-SCIENCES" target="_blank" rel="noopener noreferrer">Code <i class="fa-brands fa-github"></i></a></div>
+          </article>
+          <article class="project-card reveal reveal-delay">
+            <div class="project-number">02</div>
+            <div class="project-icon"><i class="fa-solid fa-hospital"></i></div>
+            <p class="project-type">Frontend · Product UI</p>
+            <h3>FSDH — Dermatology Hospital Website</h3>
+            <p>A modern hospital website concept focused on responsive layouts, clear information architecture, smooth motion and a polished patient-facing experience.</p>
+            <div class="tags"><span>React</span><span>Tailwind CSS</span><span>Framer Motion</span></div>
+            <div class="project-links"><a href="https://github.com/Jeevan-u" target="_blank" rel="noopener noreferrer">View GitHub <i class="fa-brands fa-github"></i></a></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <p class="project-type">Web · UI Engineering</p>
+            <h3>Jeevan's Web Studio</h3>
+            <p>A portfolio and web-design playground evolved from a static template into a responsive developer-focused site with semantic HTML, accessible navigation and lightweight interactions.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://github.com/Jeevan-u/portfolio" target="_blank" rel="noopener noreferrer">Repository <i class="fa-brands fa-github"></i></a></div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="call-to-action section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-9">
-                    <div class="call-action-content text-center">
-                        <h2 class="action-title">Have any project in mind?</h2>
-                        <p>I'd love to hear about it! Whether it's a small idea or a grand vision, I'm ready to bring it to life. Reach out today and let's make your project a reality!</p>
-                        <ul>
-                            <li><a href="#" class="btn btn-1">Download CV</a></li>
-                            <li><a href="#" class="btn btn-2">HIRE ME</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading centered reveal"><p class="eyebrow">04 / Journey</p><h2 id="experience-title">Learning by <span>shipping.</span></h2></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div><p class="timeline-date">2024 — 2028</p><h3>B.Tech — Computer Science & Engineering (AI/ML)</h3><p>Rai Technology University · Bengaluru, India</p><p>Building foundations across algorithms, operating systems, machine learning, deep learning, Java, Python and intelligent systems.</p></div></article>
+          <article class="timeline-item reveal reveal-delay"><span class="timeline-dot"></span><div><p class="timeline-date">Hands-on projects</p><h3>Developer & Project Builder</h3><p>Built and deployed web projects, including a live dermatology website and a clinic EMR workflow, while developing practical experience with React, Supabase, Cloudinary and GitHub.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div><p class="timeline-date">Certifications & simulations</p><h3>Continuous learning</h3><p>Completed learning experiences across OCI Data Science, AI foundations, cybersecurity, generative AI and industry virtual job simulations.</p></div></article>
         </div>
+      </div>
     </section>
 
-    <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Testimonials</h4>
-                        <h2>What our clients <span>say</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="testimonial-slider owl-carousel">
-                    <div class="testimonial-item">
-                        <div class="img-box">
-                            <img src="https://i.postimg.cc/wBsx5R9q/1.jpg" alt="image">
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <p>Jeevan was hired to create a corporate identity. It's modern, clean and with a beautiful design. He has a lot of experience and is very concerned about the needs of client</p>
-                        <h3>Monik</h3>
-                        <span>Marketing Director</span>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="img-box">
-                            <img src="https://i.postimg.cc/qvW47By9/2.jpg" alt="image">
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <p>I couldn't be happier with the website that Richard created for us. His attention to detail and creativity is unmatched</p>
-                        <h3>anusha</h3>
-                        <span>Art Creative Director</span>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="img-box">
-                            <img src="https://i.postimg.cc/kGMdH2Pt/3.jpg" alt="image">
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <p>Working with Jeevan has been an absolute pleasure. I was impressed with his attention to detail, his web design</p>
-                        <h3>Darshan.D</h3>
-                        <span>Marketing Director</span>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-item">
-                        <div class="img-box">
-                            <img src="https://i.postimg.cc/wxWKvTd0/4.jpg" alt="image">
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <p>I was overwhelmed with the thought of redesigning my online store, but Mark made the process seamless.  The site is not only visually appealing but also optimized for conversions</p>
-                        <h3>Manisha</h3>
-                        <span>Small Business Owner</span>
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">05 / Contact</p>
+          <h2 id="contact-title">Let's build something <span>worth shipping.</span></h2>
+          <p>I'm interested in internships, software engineering opportunities and meaningful projects where I can learn fast and contribute.</p>
         </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:jeevankl2007@gmail.com">Start a conversation <i class="fa-solid fa-paper-plane"></i></a>
+          <div class="socials" aria-label="Social links">
+            <a href="https://github.com/Jeevan-u" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jeevan-k-l-888537317/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:jeevankl2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section class="pricing section-padding" id="pricing" data-scroll-index="5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Pricing</h4>
-                        <h2>Pricing <span>plan</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-plan">
-                        <div class="pricing-header">
-                            <h3>Basic</h3>
-                        </div>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="price">99</span>
-                            <span class="period">/monthly</span>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i>5GB Bandwidth</li>
-                                <li><i class="fa-solid fa-check"></i>1 Free Update</li>
-                                <li><i class="fa-solid fa-check"></i>High Resolution Printing</li>
-                                <li><i class="fa-solid fa-check"></i>Branding</li>
-                                <li><i class="fa-solid fa-check"></i>2 Free Maintenances</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="btn btn-2">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-plan">
-                        <div class="pricing-header">
-                            <h3>Premium</h3>
-                        </div>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="price">199</span>
-                            <span class="period">/monthly</span>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i>10GB Bandwidth</li>
-                                <li><i class="fa-solid fa-check"></i>3 Free Update</li>
-                                <li><i class="fa-solid fa-check"></i>High Resolution Printing</li>
-                                <li><i class="fa-solid fa-check"></i>3 brandings</li>
-                                <li><i class="fa-solid fa-check"></i>5 Free Maintenances</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="btn btn-1">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="pricing-plan">
-                        <div class="pricing-header">
-                            <h3>Ultimate</h3>
-                        </div>
-                        <div class="pricing-price">
-                            <span class="currency">$</span>
-                            <span class="price">299</span>
-                            <span class="period">/monthly</span>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="fa-solid fa-check"></i>20GB Bandwidth</li>
-                                <li><i class="fa-solid fa-check"></i>10 Free Update</li>
-                                <li><i class="fa-solid fa-check"></i>Priority Regulation Printing</li>
-                                <li><i class="fa-solid fa-check"></i>10 brandings</li>
-                                <li><i class="fa-solid fa-check"></i>20 Free Maintenances</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="btn btn-2">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="faq section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>FAQ's</h4>
-                        <h2>Frequently <span>asked</span> queries</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div id="accordion">
-                        <div class="accordion-item">
-                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-01">
-                                <h3>100% Fluid Responsive - Fits any device perfectly</h3>
-                            </div>
-                            <div class="collapse show" id="collapse-01" data-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>Your website will seamlessly adjust to fit any device perfectly, providing an optimal viewing experience for users. Whether on a smartphone, tablet, or desktop, content will be displayed beautifully and legibly, enhancing accessibility and user satisfaction</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
-                                <h3>Clean Code</h3>
-                            </div>
-                            <div class="collapse " id="collapse-02" data-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>My code is easy to read, understand, and maintain. It emphasizes clarity and simplicity, allowing others to work efficiently and collaboratively. I follow the best practices such as meaningful naming conventions and proper organization</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
-                                <h3>Flat, Modern and Clean Design</h3>
-                            </div>
-                            <div class="collapse " id="collapse-03" data-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>I emphasize simplicity and functionality, focusing on minimalistic elements and a user-friendly interface. This approach eliminates unnecessary distractions, allowing users to navigate effortlessly while enjoying a visually pleasing experience</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
-                                <h3>Custom Font Support</h3>
-                            </div>
-                            <div class="collapse " id="collapse-04" data-parent="#accordion">
-                                <div class="accordion-body">
-                                    <p>I use unique typefaces that enhance the aesthetics and branding of a website. By utilizing the @font-face rule in CSS, I can load fonts from various sources, ensuring that text appears consistently across different devices and browsers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="contact section-padding" id="contact" data-scroll-index="6">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Contact us</h4>
-                        <h2>Get <span>in touch</span></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <div class="contact-info">
-                        <h3>For any Queries and Support</h3>
-                        <div class="contact-info-item">
-                            <i class="fa-solid fa-location-arrow"></i>
-                            <h4>Nelamangala,Bangalore,</h4>
-                            <p>Karnataka-562123</p>
-                        </div>
-
-                        <div class="contact-info-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <h4>Write to us at</h4>
-                            <p>jeevankl2007@gmail.com</p>
-                        </div>
-
-                        <div class="contact-info-item">
-                            <i class="fa-solid fa-location-arrow"></i>
-                            <h4>Call us on</h4>
-                            <p>+91 9242280953</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 col-md-7">
-                    <div class="contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Your Email" class="form-control">
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Phone" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Subject" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea name="" id="" placeholder="Your Message" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button class="btn-2">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright-text">&copy; 2024 by ULTRA CODE</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner"><p>© <span id="year"></span> Jeevan K L. Built with HTML, CSS & JavaScript.</p><a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
